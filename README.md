@@ -1,2 +1,1 @@
-# rsschool-cv
-Test
+https://Taarde.github.io/rsschool-cv/cv
