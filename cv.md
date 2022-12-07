@@ -12,3 +12,21 @@
 - JS
 
 - English: B1
+## Code example:
+```
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if (distanceToPump <= mpg * fuelLeft) {
+    return true;
+  }
+  else {
+    return false;
+  }
+};
+```
+
+## Education
+
+### HTMLAcademy
+### IT Girl School
+
+### RSSchool
