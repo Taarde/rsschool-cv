@@ -4,17 +4,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/normalize.css">
         <title>CV</title>
     </head>
     <body>
         <header>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item">Education</li>
-                    <li class="nav-item">Projects</li>
-                    <li class="nav-item">Code example</li>
-                    <li class="nav-item">Skills</li>
-                    <li class="nav-item">Contacts</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Code example</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contacts</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -22,10 +34,12 @@
             <section class="bio">
                 <img class="bio-img" src="" alt="profile picture">
                 <h1 class="bio-h1">Polina Sterligova</h1>
-                <p class="bio-text">I currently learn Front-End Development in RSSchool. I have
+                <p class="bio-text">
+                    I currently learn Front-End Development in RSSchool. I have
                     some experience with HTML and CSS and now I develop my JS skills.
                 </p>
             </section>
+            <div class="info">
             <section class="edication">
                 <div class="education-block">
                     <h3 class="education-header">HTMLacademy</h3>
@@ -51,8 +65,26 @@
             </section>
             <section class="projects"></section>
             <section class="code"></section>
-            se
+            <section class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <span class="contacts-type">E-mail</span>
+                        <a href="" class="contacts link">sterligovapolina.taarde@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <span class="contacts-type">Github</span>
+                        <a href="" class="contacts link">Taarde</a>
+                    </li>
+                    <li class="contacts-item">
+                        <span class="contacts-type">Facebook</span>
+                        <a href="" class="contacts link">Polina Sterligova</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
         </main>
-        <footer></footer>
+        <footer>
+            <span>Copyright 2022</span>
+        </footer>
     </body>
 </html>
