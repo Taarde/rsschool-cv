@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Taarde.github.io/rsschool-cv/
