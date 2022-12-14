@@ -32,59 +32,110 @@
         </header>
         <main>
             <section class="bio">
-                <img class="bio-img" src="" alt="profile picture">
-                <h1 class="bio-h1">Polina Sterligova</h1>
-                <p class="bio-text">
-                    I currently learn Front-End Development in RSSchool. I have
-                    some experience with HTML and CSS and now I develop my JS skills.
-                </p>
+                <div class="bio-text">
+                    <h1 class="bio-h1">Polina Sterligova</h1>
+                    <p class="bio-description">
+                        I currently learn Front-End Development in RSSchool. I have some experience with
+                        HTML and CSS and now I develop my JS skills.
+                    </p>
+                </div>
+                <img class="bio-img" src="/assets/img/avatar.jpg" alt="profile picture">
             </section>
             <div class="info">
-            <section class="edication">
-                <div class="education-block">
-                    <h3 class="education-header">HTMLacademy</h3>
-                    <p class="education-text"></p>
+                <div class="left-block">
+                    <section class="edication">
+                        <h2 class="education-header">Education</h2>
+                        <div class="education-block">
+                            <h3 class="education-header">HTMLacademy</h3>
+                        </div>
+                        <div class="education-block">
+                            <h3 class="education-header">ITGirls</h3>
+                        </div>
+                        <div class="education-block">
+                            <h3 class="education-header">RSSchool</h3>
+                        </div>
+                    </section>
+                    <section class="skills">
+                        <h2 class="skills-header">Skills</h2>
+                        <ul class="skills-list">
+                            <li class="skills item">HTML</li>
+                            <li class="skills item">CSS</li>
+                            <li class="skills item">JAVASCRIPT</li>
+                            <li class="skills item">GIT</li>
+                            <li class="skills item">FIGMA</li>
+                        </ul>
+                    </section>
                 </div>
-                <div class="education-block">
-                    <h3 class="education-header">ITGirls</h3>
-                    <p class="education-text"></p>
+                <div class="right-block">
+                    <div class="top-block">
+                        <section class="projects"></section>
+                        <section class="code">
+                            <div class="code-item">
+                                <pre><code>
+                            function disemvowel(str) {
+                            let re = /a|o|u|i|e/gmi;
+                            str = str.replace(re, "")
+                            return str;
+                            }
+                    </code></pre>
+                            </div>
+                            <div class="code-item">
+                                <pre><code>
+                            function findshort(s){
+                            let arr = s.split(" ");
+                            let shortest = arr[0];
+                            for (let i = 1; i&lt;arr.length; i++) {
+                                if (arr[i].length < shortest.length) {
+                                    shortest = arr[i];
+                                }
+                            }
+                            return shortest.length;
+                            }
+                    </code></pre>
+                            </div>
+                            <div class="code-item">
+                                <pre><code>
+                            function add(num1, num2) {
+                                let arr1 = num1.tostring().split("").reverse();
+                                let arr2 = num2.tostring().split("").reverse();
+                                let arr3 = [];
+                                for (let i = 0;
+                                       i < (arr1.length&lt;arr2.length ? arr2.length : arr1.length);
+                                       i++) {
+                                    arr3.unshift((parseint(arr1[i]) || 0) + (parseint(arr2[i]) || 0))
+                                }
+                                return parseint(arr3.join(''));
+                            }
+                        </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="contacts">
+                        <ul class="contacts-list">
+                            <li class="contacts-item">
+                                <span class="contacts-type">E-mail</span>
+                                <a href="" class="contacts link">sterligovapolina.taarde@gmail.com</a>
+                            </li>
+                            <li class="contacts-item">
+                                <span class="contacts-type">Github</span>
+                                <a href="" class="contacts link">Taarde</a>
+                            </li>
+                            <li class="contacts-item">
+                                <span class="contacts-type">Facebook</span>
+                                <a href="" class="contacts link">Polina Sterligova</a>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-                <div class="education-block">
-                    <h3 class="education-header">RSSchool</h3>
-                    <p class="education-text"></p>
-                </div>
-            </section>
-            <section class="skills">
-                <ul class="skills-list">
-                    <li class="skills item">HTML</li>
-                    <li class="skills item">CSS</li>
-                    <li class="skills item">JAVASCRIPT</li>
-                    <li class="skills item">GIT</li>
-                    <li class="skills item">FIGMA</li>
-                </ul>
-            </section>
-            <section class="projects"></section>
-            <section class="code"></section>
-            <section class="contacts">
-                <ul class="contacts-list">
-                    <li class="contacts-item">
-                        <span class="contacts-type">E-mail</span>
-                        <a href="" class="contacts link">sterligovapolina.taarde@gmail.com</a>
-                    </li>
-                    <li class="contacts-item">
-                        <span class="contacts-type">Github</span>
-                        <a href="" class="contacts link">Taarde</a>
-                    </li>
-                    <li class="contacts-item">
-                        <span class="contacts-type">Facebook</span>
-                        <a href="" class="contacts link">Polina Sterligova</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+            </div>
         </main>
         <footer>
             <span>Copyright 2022</span>
+            <div class="credentials">
+                <p>design based on:</p>
+                <a href="">Figma CV</a>
+            </div>
+            <a href=""><img src="" alt="RSSchool logo"></a>
         </footer>
     </body>
 </html>
