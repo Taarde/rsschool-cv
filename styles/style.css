@@ -173,3 +173,18 @@ code {
     color: black;
     font-size: 30px;
 }
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.footer-logo {
+    width: 100px;
+}
+
+.credentials-link {
+    color: #F5F5F5;
+}
