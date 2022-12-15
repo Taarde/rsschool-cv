@@ -6,7 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="anonymous"><link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
         <title>CV</title>
     </head>
     <body>
@@ -71,45 +76,45 @@
                     <div class="top-block">
                         <section class="projects">
                             <h2 class="projects-h2" id="projects">Projects</h2>
-                            <a href="#" class="projects-link">
-                                <img src="assets/img/project_ex.png" alt="" class="projects-img">
+                            <a href="https://github.com/Taarde/rsschool-cv" class="projects-link">
+                                <img src="assets/img/project_ex.png" alt="CV project" class="projects-img">
                             </a>
                         </section>
                         <section class="code">
                             <h2 class="code-header" id="code">Code</h2>
                             <div class="code-item">
-                                <pre><code><div class="code-wrapper">
+                                <pre><code>
 function disemvowel(str) {
     let re = /a|o|u|i|e/gmi;
     str = str.replace(re, "")
     return str;
 }
 
-</div></code></pre>
+</code></pre>
                             </div>
                             <div class="code-item">
-                                <pre><code><div class="code-wrapper">
+                                <pre><code>
 function findshort(s){
     let arr = s.split(" ");
     let shortest = arr[0];
     for (let i = 1; i&lt;arr.length; i++) {
-        if (arr[i].length < shortest.length) {
+        if (arr[i].length &lt; shortest.length) {
         shortest = arr[i];
         }
     }
     return shortest.length;
 }
 
-</div></code></pre>
+</code></pre>
                             </div>
                             <div class="code-item">
-                                <pre><code> <div class="code-wrapper">
+                                <pre><code>
 function add(num1, num2) {
     let arr1 = num1.tostring().split("").reverse();
     let arr2 = num2.tostring().split("").reverse();
     let arr3 = [];
     for (let i = 0;
-            i < (arr1.length&lt;arr2.length ? arr2.length : arr1.length);
+            i &lt; (arr1.length&lt;arr2.length ? arr2.length : arr1.length);
             i++) {
         arr3.unshift((parseint(arr1[i]) || 0)
         + (parseint(arr2[i]) || 0))
@@ -117,27 +122,27 @@ function add(num1, num2) {
     return parseint(arr3.join(''));
 }
 
-</div></code></pre>
+</code></pre>
                             </div>
-                        </div>
-                    </section>
-                    <section class="contacts">
-                        <h2 class="contacts-header" id="contacts">Contacts</h2>
-                        <ul class="contacts-list">
-                            <li class="contacts-item">
-                                <p class="contacts-type">E-mail</p>
-                                <a href="" class="contacts-link">sterligovapolina.taarde@gmail.com</a>
-                            </li>
-                            <li class="contacts-item">
-                                <p class="contacts-type">Github</p>
-                                <a href="https://github.com/Taarde" class="contacts-link">Taarde</a>
-                            </li>
-                            <li class="contacts-item">
-                                <p class="contacts-type">Facebook</p>
-                                <a href="" class="contacts-link">Polina Sterligova</a>
-                            </li>
-                        </ul>
-                    </section>
+                        </section>
+                    </div>
+                        <section class="contacts">
+                            <h2 class="contacts-header" id="contacts">Contacts</h2>
+                            <ul class="contacts-list">
+                                <li class="contacts-item">
+                                    <p class="contacts-type">E-mail</p>
+                                    <a href="mailto:sterligovapolina.taarde@gmail.com" class="contacts-link">sterligovapolina.taarde@gmail.com</a>
+                                </li>
+                                <li class="contacts-item">
+                                    <p class="contacts-type">Github</p>
+                                    <a href="https://github.com/Taarde" class="contacts-link">Taarde</a>
+                                </li>
+                                <li class="contacts-item">
+                                    <p class="contacts-type">Facebook</p>
+                                    <a href="https://facebook.com/100005668388150/" class="contacts-link">Polina Sterligova</a>
+                                </li>
+                            </ul>
+                        </section>
                 </div>
             </div>
         </main>
@@ -145,7 +150,9 @@ function add(num1, num2) {
             <span>Copyright 2022</span>
             <div class="credentials">
                 <span>design based on:</span>
-                <a class="credentials-link" href="https://www.figma.com/community/file/1179357913704270260">MockUp Desktop</a>
+                <a
+                    class="credentials-link"
+                    href="https://www.figma.com/community/file/1179357913704270260">MockUp Desktop</a>
             </div>
             <a href="https://rs.school/js/"><img class="footer-logo" src="assets/img/logo.svg" alt="RSSchool logo"></a>
         </footer>
