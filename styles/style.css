@@ -40,6 +40,7 @@ h2 {
     flex-direction: row;
     border: none;
     border-radius: 5% 5% 0 0;
+    justify-content: center;
 }
 .left-block {
     display: flex;
