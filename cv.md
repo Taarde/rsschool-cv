@@ -27,10 +27,14 @@ function findMissingLetter(array) {
 }
 ```
 
+## Projects
+
+-   [Track&Travel](https://taarde.github.io/trackandtravel/)
+    -   group project from ITGirls hackaton
+-   [АНО 'Растим в добре'](https://shepelkate.github.io/Firstrealproject/)
+
 ## Education
 
-### HTMLAcademy
-
-### IT Girl School
-
-### RSSchool
+-   HTMLAcademy
+-   IT Girl School
+-   RSSchool
