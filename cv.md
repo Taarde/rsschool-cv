@@ -32,6 +32,7 @@ function findMissingLetter(array) {
 -   [Track&Travel](https://taarde.github.io/trackandtravel/)
     -   group project from ITGirls hackaton
 -   [АНО 'Растим в добре'](https://shepelkate.github.io/Firstrealproject/)
+    -   group project
 
 ## Education
 
