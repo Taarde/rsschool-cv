@@ -137,12 +137,18 @@ code {
     color: #F5F5F5;
     font-size: 12px;
 }
-.projects-img {
+.project-img {
     width: 80%;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
 }
 
 .code {
     margin-left: 80px;
+    margin-right: 10px;
 }
 
 .projects {
@@ -182,4 +188,34 @@ footer {
 
 .credentials-link {
     color: #F5F5F5;
+}
+
+@media (max-width: 1350px) and (min-width: 320px) {
+    .top-block {
+        flex-direction: column;
+    }
+    .contacts-item {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .bio {
+        flex-direction: column;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .left-block {
+        flex-direction: column;
+    }
+    .top-block {
+        flex-direction: column;
+    }
+    .contacts-list {
+        flex-direction: column;
+    }
+    .nav-list {
+        display: none;
+    }
 }
