@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>CV</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#code">Code example</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="bio">
+                <div class="bio-text">
+                    <h1 class="bio-header">Polina Sterligova</h1>
+                    <p class="bio-description">
+                        I currently learn Front-End Development in RSSchool. I
+                        have some experience with HTML and CSS and now I develop
+                        my JS skills.
+                    </p>
+                </div>
+                <img
+                    class="bio-img"
+                    src="assets/img/avatar.jpg"
+                    alt="profile picture"
+                />
+            </section>
+            <div class="info">
+                <div class="left-block">
+                    <section class="education">
+                        <h2 class="education-header" id="education">
+                            Education
+                        </h2>
+                        <div class="education-block">
+                            <h3 class="education-header">HTMLacademy</h3>
+                        </div>
+                        <div class="education-block">
+                            <h3 class="education-header">ITGirls</h3>
+                        </div>
+                        <div class="education-block">
+                            <h3 class="education-header">RSSchool</h3>
+                        </div>
+                    </section>
+                    <section class="skills">
+                        <h2 class="skills-header" id="skills">Skills</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">HTML</li>
+                            <li class="skills-item">CSS</li>
+                            <li class="skills-item">JAVASCRIPT</li>
+                            <li class="skills-item">GIT</li>
+                            <li class="skills-item">FIGMA</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right-block">
+                    <div class="top-block">
+                        <section class="projects">
+                            <h2 class="projects-h2" id="projects">Projects</h2>
+                            <div class="project">
+                                <h3 class="project-header">
+                                    <a
+                                        href="https://github.com/shepelkate/Firstrealproject"
+                                        class="project-link"
+                                        >АНО "РАСтим в добре"</a
+                                    >
+                                </h3>
+                                <a
+                                    href="https://github.com/shepelkate/Firstrealproject"
+                                >
+                                    <img
+                                        class="project-img"
+                                        src="/assets/img/project-rastim_v_dobre.png"
+                                        alt="АНО РАСтим в добре"
+                                    />
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h3 class="project-header">
+                                    <a
+                                        href="https://github.com/Taarde/trackandtravel"
+                                        class="project-link"
+                                        >Track&Travel</a
+                                    >
+                                </h3>
+                                <a
+                                    href="https://github.com/Taarde/trackandtravel"
+                                >
+                                    <img
+                                        class="project-img"
+                                        src="/assets/img/project-track_and_travel.png"
+                                        alt="Track&Travel"
+                                    />
+                                </a>
+                            </div>
+                        </section>
+                        <section class="code">
+                            <h2 class="code-header" id="code">Code</h2>
+                            <div class="code-item">
+                                <pre><code>
+function disemvowel(str) {
+    let re = /a|o|u|i|e/gmi;
+    str = str.replace(re, "")
+    return str;
+}
+
+</code></pre>
+                            </div>
+                            <div class="code-item">
+                                <pre><code>
+function findshort(s){
+    let arr = s.split(" ");
+    let shortest = arr[0];
+    for (let i = 1; i&lt;arr.length; i++) {
+        if (arr[i].length &lt; shortest.length) {
+        shortest = arr[i];
+        }
+    }
+    return shortest.length;
+}
+
+</code></pre>
+                            </div>
+                            <div class="code-item">
+                                <pre><code>
+function add(num1, num2) {
+    let arr1 = num1.tostring().split("").reverse();
+    let arr2 = num2.tostring().split("").reverse();
+    let arr3 = [];
+    for (let i = 0;
+            i &lt; (arr1.length&lt;arr2.length ? arr2.length : arr1.length);
+            i++) {
+        arr3.unshift((parseint(arr1[i]) || 0)
+        + (parseint(arr2[i]) || 0))
+    }
+    return parseint(arr3.join(''));
+}
+
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="contacts">
+                        <h2 class="contacts-header" id="contacts">Contacts</h2>
+                        <ul class="contacts-list">
+                            <li class="contacts-item">
+                                <p class="contacts-type">E-mail</p>
+                                <a
+                                    href="mailto:sterligovapolina.taarde@gmail.com"
+                                    class="contacts-link"
+                                    >sterligovapolina.taarde@gmail.com</a
+                                >
+                            </li>
+                            <li class="contacts-item">
+                                <p class="contacts-type">Github</p>
+                                <a
+                                    href="https://github.com/Taarde"
+                                    class="contacts-link"
+                                    >Taarde</a
+                                >
+                            </li>
+                            <li class="contacts-item">
+                                <p class="contacts-type">Facebook</p>
+                                <a
+                                    href="https://facebook.com/100005668388150/"
+                                    class="contacts-link"
+                                    >Polina Sterligova</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span>Copyright 2022</span>
+            <div class="credentials">
+                <span>design based on:</span>
+                <a
+                    class="credentials-link"
+                    href="https://www.figma.com/community/file/1179357913704270260"
+                    >MockUp Desktop</a
+                >
+            </div>
+            <a href="https://rs.school/courses/javascript-ru"
+                ><img
+                    class="footer-logo"
+                    src="assets/img/logo.svg"
+                    alt="RSSchool logo"
+            /></a>
+        </footer>
+    </body>
+</html>
